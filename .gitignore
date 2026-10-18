@@ -1,0 +1,6 @@
+.env
+.env.*
+!.env.example
+backend/app/database/database.db
+__pycache__/
+*.py[cod]

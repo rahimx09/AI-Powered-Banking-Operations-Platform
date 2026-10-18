@@ -247,6 +247,8 @@ Set-Location D:\Python\Project\bank-ai-platform\backend
 ## Security and data notes
 
 - Keep `backend\.env` and `agent_layer\.env` private and out of version control.
+- The local SQLite database is also excluded from Git because it can contain
+  banking records. It is created by the backend when needed.
 - Use a unique, randomly generated `JWT_SECRET_KEY`; never use a sample value
   in production.
 - The backend currently uses a local SQLite database at
